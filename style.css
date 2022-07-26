@@ -1,1 +1,167 @@
-Forever
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header Section */
+
+#landing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    background-color: #F6FCFD;
+    padding: 0 2rem 0 6.25rem;
+    width: 100%;
+}
+
+.img-search {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+#landing-header input[type=text] {
+    display: block;
+    background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'><path fill='rgb(54,57,59)' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' ></path></svg>") no-repeat 15.5rem center;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 0 2rem;
+    color: #65696A;
+    background-color: #E4EDED;
+    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    border-radius: 0.3125rem;
+    border: 0;
+    outline: 0;
+    height: 2.57rem;
+    width: 60%;
+}
+
+#landing-header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+}
+
+#landing-header nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 0.375rem 0;
+}
+
+#landing-header nav .active {
+    color: #12292F;
+    border-bottom: 3px solid #FF8181;
+}
+
+#landing-header nav .inactive {
+    color: #6A7B7B;
+    border-bottom: 3px solid transparent;
+}
+
+#landing-header span {
+    padding: 0.375rem 0;
+    color: #12292F;
+    display: flex;
+    align-self: flex-start;
+}
+
+#landing-header .header-status {
+    border: 2px solid #5CCEEB;
+    border-radius: 0.3125rem;
+    padding: 0.375rem 1.625rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #12292F;
+    background: #12292f00;
+    transition: background .2s ease;
+}
+
+#landing-header .header-status:hover {
+    background: #12292F;
+    border: 2px solid #12292F;
+    box-shadow: 0px 5px 15px rgba(31, 69, 78, 0.2);
+    color: #C9EFF8;
+    border: 0;
+}
+
+#landing-header .header-myaccount {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+/* Main Section */
+
+#landing-main {
+    padding: 0 2rem 0 6.25rem;
+}
+
+#landing-main .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#landing-main .hero-text-btn {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+
+#landing-main .hero-text-btn h1 {
+    font-size: 4rem;
+    line-height: 5.4rem;
+    color: #12292F;
+    font-weight: 700;
+}
+
+#landing-main .hero-text-btn p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: #475252;
+    width: 60%;
+}
+
+#landing-main .hero-btn {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 1rem;
+}
+
+#landing-main .hero-btn a {
+    text-decoration: none;
+}
+
+#landing-main .hero-btn .first-btn,
+#landing-main .hero-btn .second-btn {
+    padding: 0.5rem 5rem;
+    border-radius: 5px;
+}
+
+#landing-main .hero-btn .first-btn {
+    background: #5CCEEB;
+}
+
+#landing-main .hero-img {
+    width: 50%;
+}
