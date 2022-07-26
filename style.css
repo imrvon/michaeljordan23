@@ -1,1 +1,58 @@
-Forever
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between
+}
+
+#profile1 h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: monospace;
+}
+
+#profile2 h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#profile1 #prof-img{
+ height:90vh ;
+ width: 70vh;
+}
+
+#profile1{
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+#profile2{
+    width: 70vh;
+    padding: 2em;
+    margin-top: 2em;
+    margin-right: 6em;
+}
+
+label,input{
+    display: block;
+    margin: .5em;
+}
+
+input{
+    padding: .4em;
+    border-radius: .3em;
+    border: 1px solid;
+    opacity: .7;
+    background-color: azure;
+    width: 90%;
+    margin-bottom: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
