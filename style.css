@@ -114,7 +114,7 @@ input{
 }
 
 #profile2 #btn2{
-    background-color: rgb(140, 201, 239);
+    background-color: rgb(140, 201, 239,.8);
     font-weight: 600;
 }
 
@@ -194,7 +194,11 @@ input{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+
+    body{
+        width: 90%;
+    }
 
     #container{
         display: block;
@@ -239,7 +243,7 @@ input{
 
     #profile2 h2{
         margin-right: 0em;
-        margin-left: -.5em;
+        margin-left: -1.5em;
         padding-right: 1em;
         width: 130%;
         text-align: center;
@@ -250,9 +254,13 @@ input{
 
     #profile2 input{
         padding: 1.2em;
-        width: 53vh;
-        margin-left: 0em;
+        width: 110%;
+        margin-left: 1em;
         margin-right: 0em;
+    }
+
+    label{
+        margin-left: 1em;
     }
 
     #togglePassword,#tg1,#tg2{

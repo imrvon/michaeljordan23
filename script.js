@@ -4,10 +4,8 @@ const password2 = document.querySelector('#password1');
 
 
   togglePassword2.addEventListener('click', function (e) {
-    // toggle the type attribute
     const type = password2.getAttribute('type') === 'password' ? 'text' : 'password';
     password2.setAttribute('type', type);
-    // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
 });
 
@@ -17,10 +15,8 @@ const password3 = document.querySelector('#password2');
 
 
   togglePassword3.addEventListener('click', function (e) {
-    // toggle the type attribute
     const type = password3.getAttribute('type') === 'password' ? 'text' : 'password';
     password3.setAttribute('type', type);
-    // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
 });
 
@@ -34,11 +30,12 @@ var pass1=document.getElementById("password1")
 var pass2=document.getElementById("password2")
 var email=document.getElementById("email")
 var username=document.getElementById("username")
+
 form.onsubmit=()=>{return false}
 
 login.addEventListener("click",()=>{
     console.log("yeah")
-    if(fname.value !="" && lname.value !="" && email.value !="" && username.value !="" && pass1 !="" && pass2 !=""){
+    if(fname.value !="" && lname.value !="" && email.value !="" && username.value !="" && pass1.value !="" && pass2.value !=""){
         // fname.classList.add("valid")
         // setTimeout(()=>{
         //     fname.classList.remove("valid")
@@ -51,7 +48,7 @@ login.addEventListener("click",()=>{
 
 
     }else{
-        if(fname.value ==""){
+        if(fname.value.length <= 1){
             fname.classList.add("invalid")
             setTimeout(()=>{
                 fname.classList.remove("invalid")
@@ -97,3 +94,11 @@ login.addEventListener("click",()=>{
         
     }
 })
+
+function log(){
+    if(pass1.value.length < 8){
+        console.log("less")
+    }else{
+        console.log("more")
+    }
+}
