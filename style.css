@@ -1,1 +1,53 @@
-Forever
+body{
+    background-color: white;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+}
+
+.container{
+    display: inline-flex;
+    margin: auto 100px;
+    margin-top: auto 100px;
+    color: black;
+}
+
+form{
+    margin: auto 100px;
+    margin-top: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input,
+button{
+    width: 400px;
+    height: 50px;
+    font-size: medium;
+}
+
+.text .radio{
+    width: 20px;
+}
+
+input{
+    color: #5CCEEB;
+}
+
+span,
+a{
+    color: #5CCEEB;
+}
+
+.container1 img{
+    border: 172px;
+}
+
+.container h2{
+    color: #5CCEEB;
+    font-size:xx-large;
+}
+
+form img{
+    margin: -100px auto;
+    height: 640px;
+}
