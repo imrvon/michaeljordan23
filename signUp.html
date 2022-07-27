@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <form method="post">
+        <div class="container1">
+            <h2>Welcome to ShopMore</h2>
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+            <img src="images\photo.png" alt="girl.with.shoppin.bags.and.phone.in.hand">
+        </div>
+        <div class="container2">
+            <div>
+                <label for="name">First name</label>
+                <input type="email" placeholder="John" required="" id="name" class="field">
+            </div>
+            <div>
+                <label for="email">Last name</label>
+                <input type="email" placeholder="Doe" required="" id="name" class="field">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="john.does@gmail.com" autocapitalize="none" autocomplete="email" required="" id="email" class="field">
+            </div>
+            <div>
+                <label for="password">Password</label> 
+                <input type="password" placeholder="minimum of 8 characters" name="password" autocomplete="current-password" required="" id="password" class="field">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                <div class="error"><input type="radio" value="">I agree to the <span>User Agreement</span> and <span>Privacy Policy</span></div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+            <div>
+                <button type="submit" class="google"><a href="#">Continue with Google</a></button>
+            </div>
+        </div>
+      </form>
+      <script src="script.js"></script>
+</body>
+</html>

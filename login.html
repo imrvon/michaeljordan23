@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <form method="post">
+        <div>
+            <img src="images\photo1.png" alt="">
+        </div>
+        <h2>Login to ShopMore</h2>
+        <div class="container">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="john.does@gmail.com" autocapitalize="none" autocomplete="email" required="" id="email" class="field">
+                <!-- <div><p>Looks like this is not an email</p></div> -->
+            </div>
+            <div>
+                <label for="password">Password</label> 
+                <input type="password" placeholder="***************" name="password" autocomplete="current-password" required="" id="password" class="field">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                <div class="error"><input type="radio" value="">Remember me <span>Forgot password</span></div>
+            </div>
+            <div></div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Log in</button>
+            <p>Don't have an account yet? <a href="signUp.html">Create account</a></p>
+        </div>
+      </form>
+      <script src="script.js"></script>
+</body>
+</html>
