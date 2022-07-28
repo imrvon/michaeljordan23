@@ -63,12 +63,21 @@ button{
 input{
     border: 1px solid black;
     margin-top: 10px;
+    padding-left: 30px;
+}
+
+.field textarea{
+    margin-left: 30px;
 }
 
 span,
 a{
     color: #5CCEEB;
     text-decoration: none;
+}
+
+span{
+    padding-left: 170px;
 }
 
 .containerS h2{
@@ -97,10 +106,6 @@ a{
 
 .text{
     display: flex;
-}
-
-::placeholder{
-    padding: 20px;
 }
 
 .btn p{
