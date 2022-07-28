@@ -3,8 +3,6 @@ body{
     position: relative;
     width: 1440px;
     height: 1024px;
-    display: flex;
-    flex-direction: row;
 }
 
 .containerS{
@@ -122,3 +120,23 @@ h3{
     width: 20px;
     margin: -0px;
 }
+
+
+@media (max-width: 700px) {
+    .containerL, .containerS, body {   
+      flex-direction: column;
+      align-items: center;
+    }
+    .sign span{
+        padding: 0px;
+    }
+    
+    .sign .radio{
+        width: 20px;
+        margin: 0px;
+    }
+    .text,
+.sign{
+    display: flex;
+}
+  }
