@@ -2,8 +2,18 @@
   box-sizing: border-box;
 }
 
+body, html{
+  padding:0;
+  margin:0;
+}
+
 #heading-paragraph{
   margin-bottom: 3em;
+}
+
+.border{
+  border-left:2px solid pink;
+  padding-left: 1em;
 }
 
 /* Style inputs */
@@ -14,6 +24,7 @@ input[type=text], [type=tel], [type=email], textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  border-radius:5px;
 }
 
 input[type=submit] {
@@ -39,7 +50,7 @@ input[type=submit]:hover {
   padding: 10px;
 }
 
-/* Create two columns that float next to eachother */
+/* Create two columns that float next to each other */
 .column {
   float: left;
   width: 50%;
