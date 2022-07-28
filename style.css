@@ -115,7 +115,7 @@ body {
 
 #landing-main {
     padding: 0 6.25rem;
-    margin-bottom: 16rem;
+    margin: 2.5rem 0 16rem;
 }
 
 #landing-main .hero {
@@ -165,6 +165,8 @@ body {
 #landing-main .hero-btn .second-btn {
     padding: 0.8rem 4.5rem;
     border-radius: 5px;
+    white-space: nowrap;
+    outline: 0;
 }
 
 #landing-main .hero-btn .first-btn {
@@ -554,6 +556,10 @@ body {
 
 /* Home Media Queries Tablet */
 @media screen and (min-width:720px) and (max-width:920px) {
+
+    #landing-main {
+        padding: 0 3rem;
+    }
     
     #landing-main .hero-text-btn h1 {
         font-size: 3rem;
