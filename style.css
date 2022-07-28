@@ -454,3 +454,92 @@ body {
     text-align: center;
     height: 3.6rem;
 }
+
+/* FAQ Page */
+#faq-main {
+    margin-top: 2rem;
+}
+
+#faq-main .faq-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#faq-main .faq-header h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+    background: #5CCEEB;
+    padding: 0rem 2rem;
+    color: #ffffff;
+}
+
+#faq-main .faq-header img {
+    width: 13%;
+    margin-bottom: 0.5rem;
+}
+
+#faq-main .faq-header h6 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color:#12292F;
+}
+
+#faq-main .faq-qna {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+#faq-main .faq-qna .faq-wrapper {
+    width: 43%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#faq-main .faq-wrapper h5, 
+#faq-main .faq-bottom h5{
+    font-size: 2rem;
+    line-height: 2.7rem;
+    font-weight: 400;
+}
+
+#faq-main .faq-wrapper p,
+#faq-main .faq-bottom p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+/* FAQ Bottom */
+#faq-main .faq-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(img/faq-bottom-bg.svg) no-repeat;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#faq-main .faq-bottom h5,
+#faq-main .faq-bottom p {
+    color: #DFE7E8;
+    max-width: 47%
+}
+
+#faq-main .faq-bottom span {
+    color: #FF4242;
+}
+
