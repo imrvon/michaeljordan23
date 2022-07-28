@@ -1,0 +1,113 @@
+body{
+    background-color: white;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerS{
+    display: inline-flex;
+    margin: auto;
+    margin-top: auto;
+}
+.containerL{
+    display: inline-flex;
+    margin: auto;
+    margin-top: auto 100px;
+}
+
+.container_2 h2{
+    font-size: xx-large;
+    margin-bottom: 70px;
+}
+
+.container_2{
+    display: inline-block;
+    margin: auto 100px;
+}
+.container_1 img{
+    width: 500px;
+    height: 600px;
+}
+
+.container1 img{
+    width: 500px;
+    height: 550px;
+}
+.container2{
+    display: inline-block;
+    margin: auto 100px;
+    margin-top: 0px;
+}
+
+form{
+    margin: auto 100px;
+    margin-top: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+input,
+button{
+    width: 400px;
+    height: 50px;
+    font-size: medium;
+}
+
+.text .radio{
+    width: 20px;
+    margin: -0px;
+}
+
+input{
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+span,
+a{
+    color: #5CCEEB;
+    text-decoration: none;
+}
+
+.containerS h2{
+    color: #5CCEEB;
+    font-size:xx-large;
+}
+
+.signupbtn,
+.loginbtn{
+    background-color: #5CCEEB;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+}
+
+.googlebtn{
+    background-color: white;
+    color: #5CCEEB;
+    border: 1px solid #5CCEEB;
+    cursor: pointer;
+}
+
+.googlebtn a{
+    text-decoration: none;
+}
+
+.text{
+    display: flex;
+}
+
+::placeholder{
+    padding: 20px;
+}
+
+.btn p{
+    text-align: center;
+}
+
+h3{
+    font-size: x-large;
+    margin-bottom: 50px;
+}
