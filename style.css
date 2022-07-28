@@ -458,17 +458,21 @@ body {
 /* FAQ Page */
 #faq-main {
     margin-top: 2rem;
+    width: 100%;
 }
 
 #faq-main .faq-header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#faq-main .faq-header-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 3.5rem;
     text-align: center;
-    width: 70%;
-    margin: 0 auto;
 }
 
 #faq-main .faq-header h3 {
@@ -529,7 +533,7 @@ body {
     align-items: center;
     justify-content: center;
     background: url(img/faq-bottom-bg.svg) no-repeat;
-    padding: 5rem 0;
+    padding: 5rem 0 5rem;
     text-align: center;
 }
 
@@ -543,3 +547,97 @@ body {
     color: #FF4242;
 }
 
+/* FAQ Tablet */
+@media screen and (min-width:720px) and (max-width:920px) {
+    #faq-main .faq-qna {
+        gap: 2rem;
+    }
+
+    #faq-main .faq-qna .faq-wrapper {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #faq-main .faq-wrapper h5 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+    #faq-main .faq-wrapper p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    
+    /* FAQ Bottom */
+     
+    #faq-main .faq-bottom h5,
+    #faq-main .faq-bottom p {
+        color: #DFE7E8;
+        max-width: 80%
+    }
+}
+
+/* FAQ Mobile */
+@media screen and (max-width:719px) {
+    
+    #faq-main .faq-header h3 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+    #faq-main .faq-header img {
+        width: 18%;
+    }
+    
+    #faq-main .faq-header h6 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+    #faq-main .faq-qna {
+        display: block;
+        margin-bottom: 5rem;
+    }
+    
+    #faq-main .faq-qna .faq-wrapper {
+        width: unset;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    #faq-main .faq-wrapper h5 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+    
+    #faq-main .faq-wrapper p,
+    #faq-main .faq-bottom p {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+
+    #faq-main #faq-wrapper .faq-img {
+        width: 15%;
+    }
+
+    #faq-main #faq-wrapper .faq-questions {
+        width: 80%;
+    }
+    
+    /* FAQ Bottom */
+    #faq-main .faq-bottom {
+        width: 100%;
+        padding: 5rem 0 2rem;
+    }
+    
+    #faq-main .faq-bottom h5,
+    #faq-main .faq-bottom p {
+        max-width: 80%
+    }
+}
