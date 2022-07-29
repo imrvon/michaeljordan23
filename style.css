@@ -58,17 +58,17 @@ body{
 
 label{
     display: block;
-    margin: .5em;
+    margin: .4em;
 }
 
 input{
+    outline: none;
     padding: 1em;
     border-radius: .3em;
     border: 1px solid;
     opacity: .7;
     background-color: rgb(247, 252, 252,.9);
     width: 90%;
-    margin-bottom: 1em;
     position: relative;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -80,7 +80,6 @@ input{
 #togglePassword,#tg1,#tg2{
     position: absolute;
     top: 2.4em;
-    /* margin-right: 100px; */
     left: 0;
     font-size: 15px;
     margin-left: 23em;
@@ -97,14 +96,12 @@ input{
     width: 40%;
     padding: 1em;
     border-radius: .3em;
-    margin-left: 0em;
+    margin-left: 7em;
     margin-bottom: .5em;
     border: 1px solid;
 }
 
-/* #bell,#user{
-    display: none;
-} */
+
 
 #profile2 #btn1{
     border: 1.6px solid rgb(81, 162, 212);
@@ -114,8 +111,9 @@ input{
 }
 
 #profile2 #btn2{
-    background-color: rgb(140, 201, 239,.8);
+    background-color: rgba(85, 206, 254, 0.954);
     font-weight: 600;
+    border: none;
 }
 
 
@@ -138,6 +136,20 @@ input{
 #profile2 #btn2:active,#profile2 #btn1:active{
     cursor: pointer;
     background-color: rgb(8, 56, 86);
+}
+
+#form span{
+    color: red;
+    font-size: .9em;
+    display: flex;
+    margin-top: .4em;
+}
+
+span img{
+    height: 15px;
+    margin-top: 0em;
+    margin-left: .3em;
+    color: red;
 }
 
 #fname.valid{
@@ -191,10 +203,7 @@ input{
 
 
 
-
-
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
 
     body{
         width: 90%;
@@ -235,7 +244,6 @@ input{
     }
 
     #profile2{
-        /* display: block; */
         margin-right: 2em;
         width: 100%;
         margin-left: 0em;
@@ -266,12 +274,159 @@ input{
     #togglePassword,#tg1,#tg2{
         top: 2.8em;
         left: 0;
-        margin-left: 20.9em;
+        margin-left: 25.5em;
+    }
+
+    #profile2 button{
+        margin-left: 12.5em;
+    }
+
+    
+  }
+
+
+  
+   @media only screen and (min-width: 768px) {
+
+    body{
+        width: 90%;
+    }
+
+    #profile1 #shop-img{
+        margin-bottom: 0px;
+        margin-left: -2em;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #profile1 #prof-img{
+        margin-left: 0;
+    }
+
+
+    #profile2{
+        margin-right: 2em;
+        width: 130%;
+        margin-left: 2em;
+    }
+
+    #profile2 h2{
+        margin-right: 0em;
+        margin-left: -1.5em;
+        padding-right: -1em;
+        width: 130%;
+        font-size: 2em;
+        padding: 1em;
+        line-height: 39px;
+    }
+
+    #profile2 input{
+        padding: 1.2em;
+        width: 140%;
+        margin-left: 1em;
+        margin-right: 0em;
+    }
+
+    label{
+        margin-left: 1em;
+    }
+
+    #togglePassword,#tg1,#tg2{
+        top: 2.8em;
+        left: 0;
+        margin-left: 25.9em;
     }
 
     #profile2 button{
         margin-left: 7.5em;
+        width: 60%;
     }
+
+
   }
   
+  @media only screen and (min-width: 992px) {
 
+    #profile2 input{
+        padding: 1.2em;
+        width: 120%;
+        margin-left: 1em;
+        margin-right: 2em;
+    }
+
+    #togglePassword,#tg1,#tg2{
+        top: 2.8em;
+        left: 0;
+        margin-left: 21.9em;
+    }
+
+    #profile2 button{
+        margin-left: 5.5em;
+        width: 60%;
+    }
+
+    #profile2{
+        margin-left: 8em;
+    }
+  } 
+
+  @media only screen and (min-width: 1100px) {
+    body {background:white;}
+
+    input{
+        outline: none;
+        padding: 1em;
+        border-radius: .3em;
+        border: 1px solid;
+        opacity: .7;
+        background-color: rgb(247, 252, 252,.9);
+        width: 90%;
+        position: relative;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #togglePassword,#tg1,#tg2{
+        margin-left: -28em;
+        opacity: 0.5;
+    }
+
+    #profile2 button{
+        margin-left: 9.5em;
+        width: 60%;
+    }
+
+    #profile2{
+        width: 35%;
+        margin-left: 2em;
+        margin-right: 5em;
+    }
+
+    #profile2 h2{
+        margin-left: -1em;
+        margin-bottom: 0em;
+    }
+
+    #profile1{
+        margin-left: 6em;
+        margin-top: 4em;
+    }
+
+    #form span{
+       margin-left: 1em;
+    }
+
+    #profile1 #shop-img{
+        display: none;
+    }
+
+    #togglePassword,#tg1,#tg2{
+        top: 2.8em;
+        left: 0;
+        margin-left: 24em;
+    }
+
+
+  } 
+  
