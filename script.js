@@ -17,11 +17,12 @@ const password3 = document.querySelector('#password2');
 });
 
 
-
+var characters="abcdefghijklmnopqrstuvwxyz"
 var login=document.getElementById("btn1")
 var form=document.getElementById("form")
 var pass1=document.getElementById("password1")
 var pass2=document.getElementById("password2")
+var input=document.getElementsByTagName("input")
 form.onsubmit=()=>{return false}
 
 login.addEventListener("click",()=>{
@@ -61,12 +62,13 @@ login.addEventListener("click",()=>{
             pass2.classList.add("invalid")
             sp5.innerHTML="password not match <img src='close-circle.svg' alt=''>"
         }
+        
 
     
 })
 
 function log1(){
-    if(fname.value.length <=2){
+    if(fname.value.length <=2 || Number(fname.value)){
         fname.classList.add("invalid")
         sp1.innerHTML="<p>Wrong input</p> <img src='close-circle.svg' alt=''>"
     }else{
@@ -81,7 +83,7 @@ function log1(){
 }
 
 function log2(){
-    if(lname.value.length <=2){
+    if(lname.value.length <=2 || Number(lname.value)){
         lname.classList.add("invalid")
         sp2.innerHTML="<p>Wrong input</p> <img src='close-circle.svg' alt=''>"
     }else{
@@ -96,7 +98,7 @@ function log2(){
 }
 
 function log3(){
-    if(email.value.length <=4){
+    if(email.value.length <=4 || Number(email.value)){
         email.classList.add("invalid")
         sp3.innerHTML="<p>Wrong input</p> <img src='close-circle.svg' alt=''>"
     }else{
@@ -111,7 +113,7 @@ function log3(){
 }
 
 function log4(){
-    if(username.value.length <=2){
+    if(username.value.length <=2 || Number(username.value)){
         username.classList.add("invalid")
         sp4.innerHTML="<p>Wrong input</p> <img src='close-circle.svg' alt=''>"
     }else{
