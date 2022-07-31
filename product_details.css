@@ -11,8 +11,120 @@
 }
 
 body {
+    max-width: 1100px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;;
+}
+
+/* Header Section */
+
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+    background-color: #F6FCFD;
+    box-shadow: 0px 5px 30px rgba(18, 41, 47, 0.2);
+    padding: 0 2rem 0 6.25rem;
+    width: 100%;
+}
+
+.img-search {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+input[type=text] {
+    display: block;
+    background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'><path fill='rgb(54,57,59)' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' ></path></svg>") no-repeat 15.5rem center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0 0.8rem;
+    color: #65696A;
+    background-color: #E4EDED;
+    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    border-radius: 0.3125rem;
+    border: 0;
+    outline: 0;
+    height: 2rem;
+    width: 70%;
+}
+
+nav {
+    position: absolute;
+    left: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.375rem 0;
+}
+
+nav .active {
+    color: #12292F;
+    border-bottom: 3px solid #FF8181;
+}
+
+nav .inactive {
+    color: #6A7B7B;
+    border-bottom: 3px solid transparent;
+}
+
+#main-header span {
+    padding: 0.3rem 0;
+    color: #12292F;
+    display: flex;
+    align-self: flex-start;
+}
+
+.header-status {
+    border: 2px solid #5CCEEB;
+    border-radius: 0.3125rem;
+    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #12292F;
+    background: #12292f00;
+    transition: background .2s ease;
+}
+
+/* .header-status:hover {
+    background: #12292F;
+    border: 2px solid #12292F;
+    box-shadow: 0px 5px 15px rgba(31, 69, 78, 0.2);
+    color: #C9EFF8;
+    border: 0;
+} */
+
+.header-myaccount {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+#extension{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5CCEEB;
+}
+
+#extension a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0000CC;
 }
 
 /* product image */
@@ -53,7 +165,6 @@ body {
     display: flex;
     align-items: center;
     color: #272A2B;
-    letter-spacing: 1px;
 }
 
 /* main price */
@@ -88,7 +199,6 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
-    line-height: 24px;
     text-align: center;
     color: #272A2B;
     background: #5CCEEB;
@@ -104,6 +214,11 @@ body {
     position: absolute;
     left: 880px;
     top: 200px;
+}
+
+.kon{
+    position: absolute;
+    left: 10px;
 }
 
 .konga-btn{
@@ -210,6 +325,10 @@ body {
     border: 1px solid #C9EFF8;
 }
 
+#pro-dmo{
+    display: none;
+}
+
 .handburger{
     display: flex;
     cursor: pointer;
@@ -231,7 +350,6 @@ body {
     background-color: #000000;
 }
 .ropbtn {
-   
     justify-content: center;
     background-color: #ffffff;
     color: rgb(12, 11, 11);
@@ -278,14 +396,17 @@ body {
 
 /* product details */
 
-#pro-d2{
-    position: absolute;
+.pro-d2{
     width: 460px;
     height: 190px;
-    left: 530px;
-    top: 450px;
     background: #FFFFFF;
     border: 1px solid #C9EFF8;
+}
+
+#prod{
+    position: absolute;
+    left: 530px;
+    top: 450px;
 }
 
 .pro{
@@ -299,6 +420,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #12292F;
+    padding-left: 10px;
 }
 
 .pro-de{
@@ -313,14 +435,17 @@ body {
 
 /* specifications */
 
-#spe-div{
-    position: absolute;
+.spe-div{
     width: 450px;
     height: 150px;
-    left: 530px;
-    top: 690px;
     background: #FFFFFF;
     border: 1px solid #C9EFF8;
+}
+
+#speci{
+    position: absolute;
+    left: 530px;
+    top: 690px;
 }
 
 .spe-div-sm{
@@ -334,13 +459,14 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #12292F;
+    padding-left: 10px;
 }
 
 .d-ul{
     position: absolute;
     width: 430px;
     height: 160px;
-    left: 30px;
+    left: 20px;
     top: 30px;
 }
 
@@ -356,17 +482,21 @@ body {
 
 /* verified customer feedback */
 
-#fe-div{
-    position: absolute;
+.fe-div{
     width: 450px;
     height: 170px;
-    left: 530px;
-    top: 890px;
     background: #FFFFFF;
     border: 1px solid #C9EFF8;
 }
 
+#veri{
+    position: absolute;
+    left: 530px;
+    top: 890px;
+}
+
 .ve-div{
+    left: 10px;
     width: 450px;
     height: 25px;
     border: 1px solid #C9EFF8;
@@ -377,6 +507,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #12292F;
+    padding-left: 10px;
 }
 
 .ra-div{
@@ -632,8 +763,8 @@ body {
     position: absolute;
     width: 220px;
     height: 120px;
-    left: 750px;
-    top: 925px;
+    left: 220px;
+    top: 35px;
     background: #FFFFFF;
     border: 1px solid #DEF5FB;
 }
@@ -643,7 +774,7 @@ body {
     width: 24px;
     height: 24px;
     left: 5px;
-    top: 5px;  
+    top: 6px;  
     background: #FF834F;
     border: 1px solid #898E8F;
     border-radius: 36px;
@@ -654,7 +785,7 @@ body {
     width: 11px;
     height: 24px;
     left: 6px;
-    top: 0px;
+    top: 1px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -664,7 +795,7 @@ body {
 .DR{
     position: absolute;
     left: 40px;
-    top: 5px;
+    top: 9px;
 }
 
 .DR-text{
@@ -679,7 +810,7 @@ body {
     width: 66px;
     height: 10px;
     left: 5px;
-    top: 30px;
+    top: 33px;
 }
 
 .img-1{
@@ -724,7 +855,7 @@ body {
 .date-ra{
     position: absolute;
     left: 90px;
-    top: 25px;
+    top: 32px;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -756,7 +887,7 @@ body {
 
 .de{
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: 10px;
     font-style: normal;
     font-weight: 400;
@@ -766,8 +897,9 @@ body {
 
 .de-d{
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: 30px;
+    width: 930px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -958,4 +1090,560 @@ body {
     text-align: center;
     height: 3.0rem;
     width: 1006px;
+}
+
+/* Mobile version */
+
+@media screen and (max-width: 500px){
+    /* Header */
+    #main-header{
+        display: none;
+    }
+
+    #extension{
+        position: absolute;
+        left: 50px;
+    }
+
+    /* product image */
+
+    .ph-img-div{
+        width: 384px;
+        height: 264px;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+
+    .ph-img{
+        width: 100%;
+    }
+
+    /* product name */
+
+    .ph-name-div{
+        width: 373px;
+        height: 61px;
+        position: absolute;
+        top: 400px;
+        left: 50px;
+    }
+
+    .ph-name{
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    /* main price */
+
+    #main-price-div{
+        position: absolute;
+        width: 100px;
+        height: 24px;
+        left: 50px;
+        top: 480px;
+    }
+
+    .main_price{
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    /* Get button */
+
+    #get-div{
+        position: absolute;
+        left: 50px;
+        top: 510px;
+    }
+
+    /* konga button */
+
+    #konga-div{
+        position: absolute;
+        left: 350px;
+        top: 480px;
+    }
+
+    /* horzontal line */
+
+    #hr-l{
+        position: absolute;
+        width: 400px;
+        height: 1px;
+        left: 40px;
+        top: 560px;
+    }
+
+    /* social share */
+
+    #social-div{
+        position: absolute;
+        left: 50px;
+        top: 570px;
+    }
+
+    #social-img{
+        position: absolute;
+        left: 110px;
+        top: 570px;
+    }
+
+    #save-img{
+        position: absolute;
+        left: 400px;
+        top: 570px;
+    }
+
+    #love-img{
+        position: absolute;
+        left: 370px;
+        top: 570px;
+    }
+
+    /* menu */
+
+    #pro-d{
+        display: none;
+    }
+
+    #pro-dmo{
+        display: block;
+        position: absolute;
+        left: 50px;
+        top: 620px;
+    }
+
+    .dropdown-item {
+        font-size: 15px;
+        width: 234px;
+    }
+
+    .ropbtn {
+        font-size: 15px;
+     }
+
+    /* product details */
+
+    .pro-d2{
+        width: 400px;
+        height: 190px;
+        background: #FFFFFF;
+        border: 1px solid #C9EFF8;
+    }
+
+
+    #prod{
+        position: absolute;
+        left: 50px;
+        top: 750px;
+    }
+
+    .pro{
+        width: 400px;
+        height: 25px;
+        border: 1px solid #C9EFF8;
+    }
+
+    .pro-text{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        color: #12292F;
+        padding-left: 10px;
+    }
+
+    .pro-de{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        color: #475252;
+        padding: 9px;
+    }
+
+    /* specifications */
+
+    .spe-div{
+        width: 400px;
+        height: 150px;
+        background: #FFFFFF;
+        border: 1px solid #C9EFF8;
+    }
+
+    .spe-div-sm{
+        width: 400px;
+        height: 25px;
+        border: 1px solid #C9EFF8;
+    }
+
+    .spe{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        color: #12292F;
+        padding-left: 10px;
+    }
+
+    .d-ul{
+        position: absolute;
+        width: 380px;
+        height: 160px;
+        left: 20px;
+        top: 30px;
+    }
+
+    .d-li{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        display: block;
+        align-items: center;
+        color: #475252;
+        padding: 10px;
+    }
+
+    /* verified customer feedback */
+
+    .fe-div{
+        width: 400px;
+        height: 155px;
+        background: #FFFFFF;
+        border: 1px solid #C9EFF8;
+    }
+
+    .ve-div{
+        width: 400px;
+        height: 25px;
+        border: 1px solid #C9EFF8;
+    }
+
+    .ve-h4{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        color: #12292F;
+        padding-left: 10px;
+    }
+
+    .ra-div{
+        position: absolute;
+        width: 175px;
+        height: 120px;
+        left: 2px;
+        top: 30px;
+    }
+
+    .main-ra-div{
+        position: absolute;
+        width: 60px;
+        height: 50px;
+        left: 15px;
+        top: 30px;
+        background: #FFFFFF;
+    }
+
+    .main-ra{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        color: #802121;
+    }
+
+    .ra-img-ma{
+        position: absolute;
+        width: 62px;
+        height: 10px;
+        left: 5px;
+        top: 70px;
+        background: #FFFFFF;
+    }
+
+    .img-ma-1{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .img-ma-2{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 12px;
+        top: 0px;
+    }
+
+    .img-ma-3{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 24px;
+        top: 0px;
+    }
+
+    .img-ma-4{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 36px;
+        top: 0px;
+    }
+
+    .img-ma-5{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 48px;
+        top: 0px;
+    }
+
+    .to-r{
+        position: absolute;
+        width: 51px;
+        height: 24px;
+        left: 10px;
+        top: 85px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #272A2B;
+    }
+
+    .forw{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 150px;
+        top: 1px;
+    }
+
+    .to-5{
+        position: absolute;
+        left: 80px;
+    }
+
+    .to-4{
+        position: absolute;
+        left: 80px;
+    }
+
+    .to-3{
+        position: absolute;
+        left: 80px;
+    }
+    .to-2{
+        position: absolute;
+        left: 80px; 
+    }
+
+    .to-1{
+        position: absolute;
+        left: 80px;
+    }
+
+    .sp-div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        position: absolute;
+        width: 135px;
+        height: 94px;
+        left: 92px;
+        top: 60px;
+    }
+
+    /* david rio */
+
+    .rio-div{
+        position: absolute;
+        width: 218px;
+        height: 120px;
+        left: 180px;
+        top: 30px;
+        background: #FFFFFF;
+        border: 1px solid #DEF5FB;
+    }
+
+    .D-div{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 5px;
+        top: 5px;  
+        background: #FF834F;
+        border: 1px solid #898E8F;
+        border-radius: 36px;
+    }
+
+    .D{
+        position: absolute;
+        width: 11px;
+        height: 24px;
+        left: 6px;
+        top: 1px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #AEE7F5;
+    }
+
+    .DR{
+        position: absolute;
+        left: 40px;
+        top: 9px;
+    }
+
+    .DR-text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #272A2B;
+    }
+
+    .star{
+        position: absolute;
+        width: 66px;
+        height: 10px;
+        left: 5px;
+        top: 36px;
+    }
+
+    .date-ra{
+        position: absolute;
+        left: 90px;
+        top: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #36393B;
+    }
+
+    .ra-text{
+        position: absolute;
+        width: 200px;
+        height: 96px;
+        left: 10px;
+        top: 56px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        color: #36393B;
+    }
+
+    /* declimation */
+
+    #de-div{
+       display: none;
+    }
+
+    /* simiilar items */
+
+    #c-div{
+        position: absolute;
+        width: 350px;
+        height: 380px;
+        left: 50px;
+        top: 970px;
+        border: 1px solid #C9EFF8;
+    }
+
+    .c-h4{
+        position: absolute;
+        width: 179px;
+        height: 24px;
+        left: 70px;
+        top: 3px;
+    }
+
+    .si-1{
+        position: absolute;
+        width: 150px;
+        height: 100px;
+    }
+
+    .si-2{
+        position: absolute;
+        width: 150px;
+        height: 100px;
+    }
+
+    .si-3{
+        position: absolute;
+        width: 150px;
+        height: 100px;
+    }
+
+    .si-p1{
+        position: absolute;
+        width: 140px;
+        height: 48px;
+        left: 200px;
+    }
+
+    .si-p2{
+        position: absolute;
+        width: 135px;
+        height: 48px;
+        left: 200px;
+    }
+
+    .si-p3{
+        position: absolute;
+        width: 130px;
+        height: 48px;
+        left: 200px;
+    }
+
+    .si-n1{
+        position: absolute;
+        width: 60px;
+        height: 20px;
+        left: 200px;
+    }
+
+    .si-n2{
+        position: absolute;
+        width: 64px;
+        height: 20px;
+        left: 200px;
+    }
+    .si-n3{
+        position: absolute;
+        width: 60px;
+        height: 20px;
+        left: 200px;
+    }
+
+    /* Footer Section */
+
+    #main-footer{
+        position: absolute;
+        top: 1250;
+        left: 30px;
+        width: 910;
+    }
+
+    .main-footer {
+        display: none;
+    }
+
+    .copyright {
+        position: absolute;
+        top: 1450;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #12292F;
+        color: #DEF5FB;
+        text-align: center;
+        height: 3.0rem;
+        width: 500px;
+    }
+
 }
