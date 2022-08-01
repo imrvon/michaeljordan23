@@ -141,3 +141,19 @@ function verifmo(){
         ReactDOM.render(<Verified />, document.getElementById('prod'))
     )
 }
+
+const handburger = document.querySelector(".dropd-mobile");
+
+handburger.addEventListener("click", () => {
+    handburger.classList.toggle("active");
+})
+
+// document.querySelectorAll(".search").forEach(n => n.addEventListener("click", () => {
+//    handburger.classList.remove("active");
+//}))
+
+function Comment(){
+    return(
+        div
+    )
+}
