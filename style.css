@@ -969,7 +969,7 @@ body {
 }
 
 /* Home Media Queries Tablet */
-@media screen and (min-width:720px) and (max-width:920px) {
+@media screen and (min-width:720px) and (max-width:1120px) {
 
     #landing-main {
         padding: 0 3rem;
