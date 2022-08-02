@@ -1218,10 +1218,18 @@ body {
     #faq-main .faq-bottom {
         width: 100%;
         padding: 5rem 0 2rem;
+        background: unset;
+        padding: 5rem 0 5rem;
+        text-align: left;
     }
     
     #faq-main .faq-bottom h5,
     #faq-main .faq-bottom p {
+        color: #12292F;
         max-width: 80%
+    }
+
+    #faq-main .faq-bottom span {
+        color: #5CCEEB;
     }
 }
