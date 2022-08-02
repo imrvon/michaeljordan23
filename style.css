@@ -18,8 +18,7 @@ body {
 /* Header Section */
 
 #main-header {
-    /* display: flex; */
-    display: none;
+    display: flex; 
     align-items: center;
     justify-content: space-between;
     height: 6rem;
@@ -27,6 +26,10 @@ body {
     box-shadow: 0px 5px 30px rgba(18, 41, 47, 0.2);
     padding: 0 2rem 0 6.25rem;
     width: 100%;
+}
+
+#main-header .img-search .shopmore-mobile-logo {
+    display: none;
 }
 
 .img-search {
@@ -37,7 +40,7 @@ body {
 
 #main-header input[type=text] {
     display: block;
-    background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'><path fill='rgb(54,57,59)' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' ></path></svg>") no-repeat 15.5rem center;
+    background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'><path fill='rgb(54,57,59)' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' ></path></svg>") no-repeat 95% center;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5rem;
@@ -103,10 +106,38 @@ body {
     border: 0;
 } */
 
+#main-header .mobile-only {
+    display: none;
+}
+
+#main-header .mobile-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+#main-header hr {
+    display: none;
+}
+
+
 #main-header .header-myaccount {
     opacity: 0;
     visibility: hidden;
     display: none;
+}
+
+/* Hamburger Menu */
+
+#main-header nav .hamburger {
+    display: none;
+}
+
+#main-header .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Main Section */
@@ -335,7 +366,10 @@ body {
 
 /* Brand Section */
 #landing-main .top-selling .brand-price {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0.3rem;
+    word-break: break-all;
 }
 
 #landing-main .top-selling .brand-price h6 {
@@ -343,20 +377,29 @@ body {
     line-height: 2rem;
     font-weight: 700;
     color: #12292F;
+    width: 50%;
 }
 
 #landing-main .top-selling .brand-price p {
+    display: flex;
+    justify-content: flex-end;
     font-size: 1.25rem;
     line-height: 1.5rem;
     font-weight: 400;
     color: #12292F;
+    width: 50%;
 }
 
 /* Store and Cart */
+
 #landing-main .top-selling .cart-store {
     display: flex;
     gap: 1rem;
     margin-bottom: 2.5rem;
+}
+
+#landing-main .top-selling .cart-store img {
+    width: 1.50rem;
 }
 
 #landing-main .top-selling .cart-store p {
@@ -371,12 +414,19 @@ body {
     margin-bottom: 1rem;
 }
 
+#landing-main .top-selling .reviews-star img {
+    width: 30%;
+}
+
 #landing-main .top-selling .reviews-star a {
+    display: flex;
+    justify-content: flex-end;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 600;
     color: #475252;
     text-decoration: none;
+    width: 60%;
 }
 
 /* Ready */
@@ -550,9 +600,373 @@ body {
     color: #FF4242;
 }
 
-/* Media Queries */
-/*  */
-/*  */
+/* All Media Queries */
+
+/* Tablet View Header */
+
+@media screen and (min-width:720px) and (max-width:1120px) {
+
+    #main-header {
+        padding: 0 3rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #main-header .img-search input {
+        display: none;
+    }
+
+    #main-header .img-search {
+        display: block;
+        width: 10%;
+    }
+
+    #main-header nav {
+        width: 80%;
+    }
+
+    #main-header .img-search .shopmore-logo {
+        display: none;
+    }
+
+    #main-header .img-search .shopmore-mobile-logo {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Mobile View  */
+
+@media screen and (min-width:320px) and (max-width:719px) {
+    #main-header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 0 1rem;
+        height: 4rem;
+    }
+
+    #main-header .img-search .shopmore-logo {
+        display: none;
+    }
+
+    #main-header .img-search .shopmore-mobile-logo {
+        display: block;
+        width: 2.75rem;
+    }
+
+    #main-header .img-search input {
+        display: none;
+    }
+
+    #main-header nav .menu {
+        display: none;
+    }
+
+    #main-header nav {
+        justify-content: flex-end;
+    }
+
+    .menu a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: #f1f1f1;
+    }
+
+    #main-header nav .menu.is-active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        overflow-x: hidden;
+        background-color: #ffffff;
+    }
+
+    #main-header nav .menu .header-status {
+        display: none;
+    }
+
+    #main-header nav .hamburger {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 40px;
+        z-index: 20001;
+        user-select: none;
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+    }
+
+    #main-header nav .hamburger div {
+        height: 5px;
+        background: #12292F;
+        margin: 3px 0;
+        border-radius: 24px;
+        transition: .3s;
+        position: relative;
+        z-index: 1;
+        transform-origin: 0 0;
+    }
+
+    #main-header nav .hamburger .line {
+        width: 40px;
+    }
+
+    #main-header nav .hamburger.is-active .line-one {
+        transform: translate(0px, -2px) rotate(45deg);
+    }
+
+    #main-header nav .hamburger.is-active .line-two {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    #main-header nav .hamburger.is-active .line-three {
+        transform: translate(-3px, 3px) rotate(-45deg);
+    }
+
+    #main-header nav .menu hr {
+        display: block;
+        height: 5px;
+        border: 2px solid #5CCEEB;
+        width: 90%;
+    }
+
+    #main-header nav .menu .mobile-only {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 90%;
+    }
+
+    #main-header nav .menu .mobile-only a {
+        color: #6A7B7B;
+    }
+
+    /* Main Section Mobile */
+
+    /* Hero Section Mobile */
+
+    #landing-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+        padding: 0 1rem;
+    }
+
+    #landing-main .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #landing-main .hero-text-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    #landing-main .hero-text-btn h1 {
+        font-size: 2.5rem;
+        line-height: 3.4rem;
+    }
+
+    #landing-main .hero-text-btn p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        font-weight: 600;
+        color: #475252;
+        width: 80%;
+    }
+
+    #landing-main .hero-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #landing-main .hero-img {
+        display: none;
+    }
+
+
+    /* Best Prices & Ready Mobile */
+    #landing-main .best-prices {
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    #landing-main .best-prices h2
+    {
+        font-size: 2rem;
+        line-height: 2.76rem;
+    }
+
+    #landing-main .best-prices p,
+    #landing-main .ready p {
+        width: 100%;
+    }
+
+    #landing-main .best-prices hr,
+    #landing-main .best-selling hr,
+    #landing-main .top-selling hr{
+        display: flex;
+        align-self: center;
+        width: 80%;
+        height: 2px;
+        margin: 5rem 0;
+    }
+
+    /* Best Selling */
+    #landing-main .best-selling {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #landing-main .best-selling-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+
+    #landing-main .best-selling h4,
+    #landing-main .top-selling h4{
+        font-size: 2rem;
+        line-height: 2.7rem;
+    }
+
+    #landing-main .best-selling .selling-head-img {
+        width: 100%;
+    }
+
+    #landing-main .best-selling img {
+        width: 100%;
+    }
+
+    #landing-main .best-selling h5 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+    }
+
+    #landing-main .best-selling .selling-desc {
+        width: 100%;
+    }
+
+    #landing-main .selling-desc a {
+        display: flex;
+        align-self: center;
+    }
+
+    /* Flex The Top Selling Products */
+    #landing-main .top-selling .top-selling-flex {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #landing-main .top-selling .top-product {
+        width: 48%;
+    }
+
+    #landing-main .top-selling .top-selling-details {
+        padding: 0.5rem;
+    }
+    
+    #landing-main .top-selling .brand-price h6 {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    
+    #landing-main .top-selling .brand-price p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    
+    /* Store and Cart */
+
+    #landing-main .top-selling .cart-store img {
+        width: 1rem;
+    }
+    
+    #landing-main .top-selling .cart-store p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    /* Review */
+    #landing-main .top-selling .reviews-star {
+        word-break: break-all;
+    }
+    
+    /* Ready */
+    
+    #landing-main .ready h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Footer Section */
+    
+    #main-footer .main-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: 5rem 0;
+        gap: 2rem;
+        padding: 0.5rem 1;
+    }
+
+    #main-footer .foot-item {
+        width: 45%;
+    }
+    
+    #main-footer .footer-item {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        gap: 1rem;
+    }
+    
+    #main-footer .footer-item a {
+        text-decoration: none;
+        color:#475252;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    
+    #main-footer .footer-item h5 {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+}
 
 /* Home Media Queries Tablet */
 @media screen and (min-width:720px) and (max-width:920px) {
@@ -626,8 +1040,6 @@ body {
         font-size: 1.5rem;
         line-height: 2rem;
     }
-    
-    /* Top Selling Products */
     
     /* Flex The Top Selling Products */
     #landing-main .top-selling .top-selling-flex {
