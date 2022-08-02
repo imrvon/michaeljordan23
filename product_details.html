@@ -50,11 +50,11 @@
                             <span class="bar"></span>
                             <span class="bar"></span>
                         </div>
-                        <p class="ropbtn">Product Details</p>
+                        <p onclick="openProductDetail()" class="ropbtn">Product Details</p>
                     </div>
                     <div class="dropdown-item">
-                        <a class="ad" href="#">Specifications</a>
-                        <a class="ad" href="#">Verified Customer Feedback</a>
+                        <a onclick="openSpecifications()" class="ad" href="#">Specifications</a>
+                        <a onclick="openVerifiedCustomerFeedback()" class="ad" href="#">Verified Customer Feedback</a>
                     </div>
                 </div>
             </label>
@@ -153,7 +153,7 @@
                 </div>
             </div>
             </div>
-            <div class="rio-div">
+            <div id="fe-div2" class="rio-div">
                 <div class="D-div">
                     <p class="D">D</p>
                 </div>
@@ -209,5 +209,7 @@
         <div class="copyright"><p>Copyright 2022: Zuri Team 23</p></div>
     </footer>
 
+
+    <script src="product_details.js"></script>
 </body>
 </html>
