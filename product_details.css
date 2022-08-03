@@ -372,7 +372,7 @@ nav .inactive {
     padding-bottom: 5px;
     font-size: 16px;
     border: none;
-    width: 162px;
+    width: 165px;
     margin: 0 auto;
  }
   
@@ -384,6 +384,7 @@ nav .inactive {
 .dropdown-item {
     display: none;
     position: absolute;
+    width: 236px;
     background-color: #f1f1f1;
     font-weight: 500;
     font-size: 16px;
@@ -1651,7 +1652,7 @@ footer{
         width: 350px;
         height: 380px;
         left: 50px;
-        top: 970px;
+        top: 1050px;
         border: 1px solid #C9EFF8;
     }
 
@@ -1755,4 +1756,87 @@ footer{
         width: 500px;
     }
 
+}
+
+/* Comment */
+
+.comment-div{
+    width: 390px;
+    height: 230px;
+    background: #FFFFFF;
+    border: 1px solid #C9EFF8;
+}
+
+.comment-div h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #12292F;
+    text-align: center;
+}
+
+.comment-div h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #12292F;
+    text-align: center;
+}
+
+.comment-div ol{
+    width: 370px;
+    height: 100px;
+    overflow: auto;
+}
+
+.comment-div li{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-de{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-com .text{
+    width: 350px;
+}
+
+.user{
+    padding-left: 50px;
+}
+
+.post-com{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    display: block;
+    align-items: center;
+    color: #475252;
+    padding: 10px;
+}
+
+
+.add-comment{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-comment button{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    color: #272A2B;
+    background: #5CCEEB;
+    border: 1px solid #898E8F;
+    border-radius: 4px;
+    width: 80px;
+    height: 20px;
+}
+
+.add-comment textarea{
+    width: 390px;
+    border: 1px solid #C9EFF8;
 }

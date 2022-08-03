@@ -15,7 +15,9 @@
     <header id="main-header">
         <div class="img-search">
             <img src="./pd-img/logo.svg" alt="shopmore logo">
-            <input type="text" placeholder="Search">
+            <form action="" method="get">
+                <input type="text" placeholder="Search">
+            </form>
         </div>
         <nav>
             <a href="" class="inactive">Home</a>
@@ -38,7 +40,9 @@
                         <span class="bars"></span>
                         <span class="bars"></span>
                     </div>
-                    <input class="search" type="text" placeholder="Search">
+                    <form action="" method="get">
+                        <input class="search" type="text" placeholder="Search">
+                    </form>
                 </div>
                 <div class="dropdown-item-mo">
                     <a class="ad-mobile" href="">Home</a>
@@ -46,6 +50,7 @@
                     <a class="ad-mobile" href="">About</a>
                     <a class="ad-mobile" href="">Contact</a>
                     <a class="ad-mobile" href="">FAQ</a>
+                    <a class="ad-mobile" href="">Sign In</a>
                 </div>
             </div>
         </label>
@@ -80,7 +85,7 @@
                 <a href="#"><img class="twiter"src="./pd-img/twitter.png" alt=""></a>
             </div>
             <div id="comment-img">
-                <img src="./pd-img/message.png" alt="save">
+                <a onclick="Com()" href="#"><img src="./pd-img/message.png" alt="comment"></a>
             </div>
         <div id="love-img">
             <img src="./pd-img/heart.png" alt="love">
@@ -99,9 +104,10 @@
                             <span class="bar"></span>
                             <span class="bar"></span>
                         </div>
-                        <p class="ropbtn">Product Details</p>
+                        <p class="ropbtn">Product Informations</p>
                     </div>
                     <div class="dropdown-item">
+                        <a class="ad" onclick="produ()" href="#prod">Product Details</a>
                         <a class="ad" onclick="specifi()" href="#speci">Specifications</a>
                         <a class="ad" onclick="verif()" href="#veri">Verified Customer Feedback</a>
                     </div>

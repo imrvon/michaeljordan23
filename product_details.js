@@ -143,10 +143,15 @@ function verifmo(){
 }
 
 const handburger = document.querySelector(".dropd-mobile");
+const handburger2 = document.querySelector(".dropd");
 
 handburger.addEventListener("click", () => {
     handburger.classList.toggle("active");
 })
+
+// handburger2.addEventListener("click", () => {
+//    handburger2.classList.toggle("active");
+// })
 
 // document.querySelectorAll(".search").forEach(n => n.addEventListener("click", () => {
 //    handburger.classList.remove("active");
@@ -154,6 +159,35 @@ handburger.addEventListener("click", () => {
 
 function Comment(){
     return(
-        div
+        <div class="comment-div">
+            <div class="h4">
+            <h4>90 Comment</h4>
+            </div>
+            <div class="post-com">
+                <ol>
+                    <li>
+                        <div class="comment-de">
+                        <p class="date">03/08/2022</p>
+                        <p class="user">Adam</p>
+                        </div>
+                        <p class="text">I gjjdj, hwhjskjks. yuduadggad gdgajgjdjggaj fdghdjad, fgjgaj ggaaj jkhjk ,dhj hgjg D.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="add-comment">
+            <h5>Add a new comment</h5>
+            <form action="" method="post">
+                <textarea type="submit" name="Comment" ></textarea>
+                <button type='submit' >Submit</button>
+            </form>
+            </div>
+        </div>
+    )
+}
+
+
+function Com(){
+    return(
+        ReactDOM.render(<Comment />, document.getElementById('prod'))
     )
 }
