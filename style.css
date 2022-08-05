@@ -38,22 +38,45 @@ body {
     width: 50%;
 }
 
-#main-header input[type=text] {
+#main-header .header-form {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 2.57rem;
+    border-radius: 0.3125rem;
+    color: #65696A;
+    background-color: #E4EDED;
+    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    border: 0;
+    outline: 0;
+}
+
+#main-header input[type=search] {
+    all: unset;
     display: block;
-    background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'><path fill='rgb(54,57,59)' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' ></path></svg>") no-repeat 95% center;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5rem;
     padding: 0 2rem;
-    color: #65696A;
-    background-color: #E4EDED;
-    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
-    border-radius: 0.3125rem;
-    border: 0;
-    outline: 0;
-    height: 2.57rem;
-    width: 60%;
+    width: 100%;
+    height: 100%;
 }
+
+#main-header .img-search button {
+    all: unset;
+    cursor: pointer;
+    width: 2.57rem;
+    height: 2.57rem;
+  }
+  
+  #main-header .img-search svg {
+    display: flex;
+    color: #65696A;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
 
 #main-header nav {
     display: flex;
@@ -615,7 +638,7 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
-    #main-header .img-search input {
+    #main-header .img-search .header-form {
         display: none;
     }
 
@@ -634,7 +657,7 @@ body {
 
     #main-header .img-search .shopmore-mobile-logo {
         display: block;
-        width: 100%;
+        width: 70%;
     }
 }
 
@@ -658,7 +681,7 @@ body {
         width: 2.75rem;
     }
 
-    #main-header .img-search input {
+    #main-header .img-search .header-form {
         display: none;
     }
 
@@ -764,7 +787,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 15%;
+        margin-top: 20%;
         padding: 0 2rem;
     }
 
